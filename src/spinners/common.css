@@ -5,8 +5,17 @@ body {
 
 .spinner-example-container {
   gap: 64px;
+  padding: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
   overflow: hidden;
+}
+
+.light {
+  background: white;
+}
+
+.dark {
+  background: rgb(40, 40, 40);
 }

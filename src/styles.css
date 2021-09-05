@@ -9,7 +9,7 @@ h1 {
 }
 
 .spinner--container {
-  width: 600px;
-  height: 100px;
+  width: 100vw;
+  height: 150px;
   border: none
 }

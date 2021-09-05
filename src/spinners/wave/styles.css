@@ -64,6 +64,14 @@
   -webkit-animation-timing-function: cubic-bezier(.88,.01,.17,.99);
 }
 
+.spinner--wave-light .spinner--wave-el {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.spinner--wave-dark .spinner--wave-el {
+  background: rgba(255, 255, 255, 0.6);
+}
+
 .spinner--wave-1 {
   animation-delay: 0;
 }

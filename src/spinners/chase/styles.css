@@ -144,9 +144,17 @@
 }
 
 .spinner--chase-el {
-  background: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
   position: absolute;
+}
+
+.spinner--chase-light .spinner--chase-el {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.spinner--chase-dark .spinner--chase-el {
+  background: rgba(255, 255, 255, 0.6);
 }
 
 @keyframes rotate {
