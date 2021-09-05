@@ -1,0 +1,93 @@
+:root {
+  --small-width: 32px;
+  --small-height: 16px;
+  --small-size: 4px;
+
+  --medium-width:  64px;
+  --medium-height: 32px;
+  --medium-size: 8px;
+
+  --large-width: 96px;
+  --large-height: 48px;
+  --large-size: 12px;
+
+  --duration: 1.5s;
+  --delay: 0.05s;
+}
+
+.spinner--shuffle-container {
+  display: block;
+}
+
+.spinner--shuffle {
+  width: var(--medium-width);
+  height: var(--medium-height);
+  position: relative;
+}
+
+.spinner--shuffle-sm {
+  width: var(--small-width);
+  height: var(--small-height);
+}
+
+.spinner--shuffle-sm .spinner--shuffle-el {
+  width: var(--small-size);
+  height: var(--small-size);
+  top: calc((var(--small-height) - var(--small-size)) / 2);
+}
+
+.spinner--shuffle-md {
+  width: var(--medium-width);
+  height: var(--medium-height);
+}
+
+.spinner--shuffle-md .spinner--shuffle-el {
+  width: var(--medium-size);
+  height: var(--medium-size);
+  top: calc((var(--medium-height) - var(--medium-size)) / 2);
+}
+
+.spinner--shuffle-lg {
+  width: var(--large-width);
+  height: var(--large-height);
+}
+
+.spinner--shuffle-lg .spinner--shuffle-el {
+  width: var(--large-size);
+  height: var(--large-size);
+  top: calc((var(--large-height) - var(--large-size)) / 2);
+}
+
+.spinner--shuffle-el {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  animation: wave-move var(--duration) infinite;
+  animation-timing-function: cubic-bezier(.88,.01,.17,.99);
+  -webkit-animation-timing-function: cubic-bezier(.88,.01,.17,.99);
+  position: absolute;
+}
+
+.spinner--shuffle-1 {
+}
+
+.spinner--shuffle-2 {
+  animation-delay: calc(-1 * var(--delay));
+}
+
+.spinner--shuffle-3 {
+  animation-delay: calc(-2 * var(--delay));
+}
+
+.spinner--shuffle-4 {
+  animation-delay: calc(-3 * var(--delay));
+}
+
+.spinner--shuffle-5 {
+  animation-delay: calc(-4 * var(--delay));
+}
+
+@keyframes wave-move {
+  0%   {right: 0%;}
+  50%  {right: 85%;}
+  100% {right: 0%;}
+}
