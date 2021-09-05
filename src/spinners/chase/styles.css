@@ -16,18 +16,12 @@
   --delay: 0.08s;
 }
 
-.spinner--chase-container {
+.spinner--chase {
   display: block;
   position: relative;
   animation: rotate var(--outer-duration) infinite;
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
-}
-
-.spinner--chase {
-  width: var(--medium-width);
-  height: var(--medium-height);
-  position: absolute;
 }
 
 .spinner--chase-sm {

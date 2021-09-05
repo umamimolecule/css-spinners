@@ -15,10 +15,6 @@
   --delay: 0.05s;
 }
 
-.spinner--shuffle-container {
-  display: block;
-}
-
 .spinner--shuffle {
   width: var(--medium-width);
   height: var(--medium-height);
@@ -75,22 +71,22 @@
   background: rgba(255, 255, 255, 0.6);
 }
 
-.spinner--shuffle-1 {
+.spinner--shuffle-el-1 {
 }
 
-.spinner--shuffle-2 {
+.spinner--shuffle-el-2 {
   animation-delay: calc(-1 * var(--delay));
 }
 
-.spinner--shuffle-3 {
+.spinner--shuffle-el-3 {
   animation-delay: calc(-2 * var(--delay));
 }
 
-.spinner--shuffle-4 {
+.spinner--shuffle-el-4 {
   animation-delay: calc(-3 * var(--delay));
 }
 
-.spinner--shuffle-5 {
+.spinner--shuffle-el-5 {
   animation-delay: calc(-4 * var(--delay));
 }
 

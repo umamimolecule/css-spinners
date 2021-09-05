@@ -2,25 +2,17 @@
   --small-width: 32px;
   --small-height: 32px;
   --small-gap: 3px;
-  --small-radius: 3px;
 
   --medium-width:  64px;
   --medium-height: 64px;
   --medium-gap: 6px;
-  --medium-radius: 6px;
 
   --large-width: 96px;
   --large-height: 96px;
   --large-gap: 9px;
-  --large-radius: 9px;
 
   --duration: 1s;
-  --elements: 5;
   --delay: 0.05s;
-}
-
-.spinner--wave-container {
-  display: block;
 }
 
 .spinner--wave {
@@ -52,10 +44,6 @@
   gap: var(--large-gap);
 }
 
-.spinner--wave-lg.spinner-wave-el {
-  border-radius: var(--large-radius);
-}
-
 .spinner--wave-el {
   background: rgba(0, 0, 0, 0.4);
   flex: 1 1;
@@ -72,23 +60,23 @@
   background: rgba(255, 255, 255, 0.6);
 }
 
-.spinner--wave-1 {
+.spinner--wave-el-1 {
   animation-delay: 0;
 }
 
-.spinner--wave-2 {
+.spinner--wave-el-2 {
   animation-delay: calc(-1 * var(--delay));
 }
 
-.spinner--wave-3 {
+.spinner--wave-el-3 {
   animation-delay: calc(-2 * var(--delay));
 }
 
-.spinner--wave-4 {
+.spinner--wave-el-4 {
   animation-delay: calc(-3 * var(--delay));
 }
 
-.spinner--wave-5 {
+.spinner--wave-el-5 {
   animation-delay: calc(-4 * var(--delay));
 }
 

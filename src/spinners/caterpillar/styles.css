@@ -12,12 +12,7 @@
   --large-size: 12px;
 
   --duration: 1.5s;
-  --elements: 5;
   --delay: 0.075s;
-}
-
-.spinner--caterpillar-container {
-  display: block;
 }
 
 .spinner--caterpillar {
@@ -79,22 +74,22 @@
   background: rgba(255, 255, 255, 0.6);
 }
 
-.spinner--caterpillar-1 {
+.spinner--caterpillar-el-1 {
 }
 
-.spinner--caterpillar-2 {
+.spinner--caterpillar-el-2 {
   animation-delay: calc(-1 * var(--delay));
 }
 
-.spinner--caterpillar-3 {
+.spinner--caterpillar-el-3 {
   animation-delay: calc(-2 * var(--delay));
 }
 
-.spinner--caterpillar-4 {
+.spinner--caterpillar-el-4 {
   animation-delay: calc(-3 * var(--delay));
 }
 
-.spinner--caterpillar-5 {
+.spinner--caterpillar-el-5 {
   animation-delay: calc(-4 * var(--delay));
 }
 
