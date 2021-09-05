@@ -1,0 +1,11 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.spinner-example-container {
+  gap: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
