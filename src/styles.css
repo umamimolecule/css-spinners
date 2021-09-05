@@ -8,7 +8,7 @@ h1 {
   margin: 16px 0 0 0;
 }
 
-.spinner--container {
+iframe.spinner__container {
   width: 100vw;
   height: 150px;
   border: none

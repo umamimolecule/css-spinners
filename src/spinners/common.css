@@ -3,7 +3,7 @@ body {
   padding: 0px;
 }
 
-.spinner-example-container {
+.spinner__example__container {
   gap: 64px;
   padding: 16px;
   display: flex;
@@ -12,10 +12,10 @@ body {
   overflow: hidden;
 }
 
-.light {
+.spinner__example__container--light {
   background: white;
 }
 
-.dark {
+.spinner__example__container--dark {
   background: rgb(40, 40, 40);
 }

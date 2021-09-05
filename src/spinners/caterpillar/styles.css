@@ -15,7 +15,7 @@
   --delay: 0.075s;
 }
 
-.spinner--caterpillar {
+.spinner__caterpillar {
   width: var(--medium-width);
   height: var(--medium-height);
   display: flex;
@@ -27,37 +27,37 @@
   position: relative;
 }
 
-.spinner--caterpillar-sm {
+.spinner__caterpillar--sm {
   width: var(--small-width);
   height: var(--small-height);
 }
 
-.spinner--caterpillar-sm .spinner--caterpillar-el {
+.spinner__caterpillar--sm .spinner__caterpillar__el {
   width: var(--small-size);
   height: var(--small-size);
 }
 
-.spinner--caterpillar-md {
+.spinner__caterpillar--md {
   width: var(--medium-width);
   height: var(--medium-height);
 }
 
-.spinner--caterpillar-md .spinner--caterpillar-el {
+.spinner__caterpillar--md .spinner__caterpillar__el {
   width: var(--medium-size);
   height: var(--medium-size);
 }
 
-.spinner--caterpillar-lg {
+.spinner__caterpillar--lg {
   width: var(--large-width);
   height: var(--large-height);
 }
 
-.spinner--caterpillar-lg .spinner--caterpillar-el {
+.spinner__caterpillar--lg .spinner__caterpillar__el {
   width: var(--large-size);
   height: var(--large-size);
 }
 
-.spinner--caterpillar-el {
+.spinner__caterpillar__el {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.4);
   animation: wave-move var(--duration) infinite;
@@ -66,30 +66,30 @@
   position: relative;
 }
 
-.spinner--caterpillar-light .spinner--caterpillar-el {
+.spinner__caterpillar--light .spinner__caterpillar__el {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.spinner--caterpillar-dark .spinner--caterpillar-el {
+.spinner__caterpillar-dark .spinner__caterpillar__el {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.spinner--caterpillar-el-1 {
+.spinner__caterpillar__el--1 {
 }
 
-.spinner--caterpillar-el-2 {
+.spinner__caterpillar__el--2 {
   animation-delay: calc(-1 * var(--delay));
 }
 
-.spinner--caterpillar-el-3 {
+.spinner__caterpillar__el--3 {
   animation-delay: calc(-2 * var(--delay));
 }
 
-.spinner--caterpillar-el-4 {
+.spinner__caterpillar__el--4 {
   animation-delay: calc(-3 * var(--delay));
 }
 
-.spinner--caterpillar-el-5 {
+.spinner__caterpillar__el--5 {
   animation-delay: calc(-4 * var(--delay));
 }
 

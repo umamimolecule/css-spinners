@@ -15,46 +15,46 @@
   --delay: 0.05s;
 }
 
-.spinner--shuffle {
+.spinner__shuffle {
   width: var(--medium-width);
   height: var(--medium-height);
   position: relative;
 }
 
-.spinner--shuffle-sm {
+.spinner__shuffle--sm {
   width: var(--small-width);
   height: var(--small-height);
 }
 
-.spinner--shuffle-sm .spinner--shuffle-el {
+.spinner__shuffle--sm .spinner__shuffle__el {
   width: var(--small-size);
   height: var(--small-size);
   top: calc((var(--small-height) - var(--small-size)) / 2);
 }
 
-.spinner--shuffle-md {
+.spinner__shuffle--md {
   width: var(--medium-width);
   height: var(--medium-height);
 }
 
-.spinner--shuffle-md .spinner--shuffle-el {
+.spinner__shuffle--md .spinner__shuffle__el {
   width: var(--medium-size);
   height: var(--medium-size);
   top: calc((var(--medium-height) - var(--medium-size)) / 2);
 }
 
-.spinner--shuffle-lg {
+.spinner__shuffle--lg {
   width: var(--large-width);
   height: var(--large-height);
 }
 
-.spinner--shuffle-lg .spinner--shuffle-el {
+.spinner__shuffle--lg .spinner__shuffle__el {
   width: var(--large-size);
   height: var(--large-size);
   top: calc((var(--large-height) - var(--large-size)) / 2);
 }
 
-.spinner--shuffle-el {
+.spinner__shuffle__el {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.4);
   animation: wave-move var(--duration) infinite;
@@ -63,30 +63,30 @@
   position: absolute;
 }
 
-.spinner--shuffle-light .spinner--shuffle-el {
+.spinner__shuffle--light .spinner__shuffle__el {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.spinner--shuffle-dark .spinner--shuffle-el {
+.spinner__shuffle--dark .spinner__shuffle__el {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.spinner--shuffle-el-1 {
+.spinner__shuffle__el--1 {
 }
 
-.spinner--shuffle-el-2 {
+.spinner__shuffle__el--2 {
   animation-delay: calc(-1 * var(--delay));
 }
 
-.spinner--shuffle-el-3 {
+.spinner__shuffle__el--3 {
   animation-delay: calc(-2 * var(--delay));
 }
 
-.spinner--shuffle-el-4 {
+.spinner__shuffle__el--4 {
   animation-delay: calc(-3 * var(--delay));
 }
 
-.spinner--shuffle-el-5 {
+.spinner__shuffle__el--5 {
   animation-delay: calc(-4 * var(--delay));
 }
 

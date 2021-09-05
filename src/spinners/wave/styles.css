@@ -15,7 +15,7 @@
   --delay: 0.05s;
 }
 
-.spinner--wave {
+.spinner__wave {
   width: var(--medium-width);
   height: var(--medium-height);
   display: flex;
@@ -26,25 +26,25 @@
   top: 0px;
 }
 
-.spinner--wave-sm {
+.spinner__wave--sm {
   width: var(--small-width);
   height: var(--small-height);
   gap: var(--small-gap);
 }
 
-.spinner--wave-md {
+.spinner__wave--md {
   width: var(--medium-width);
   height: var(--medium-height);
   gap: var(--medium-gap);
 }
 
-.spinner--wave-lg {
+.spinner__wave--lg {
   width: var(--large-width);
   height: var(--large-height);
   gap: var(--large-gap);
 }
 
-.spinner--wave-el {
+.spinner__wave__el {
   background: rgba(0, 0, 0, 0.4);
   flex: 1 1;
   animation: wave-move var(--duration) infinite;
@@ -52,31 +52,31 @@
   -webkit-animation-timing-function: cubic-bezier(.88,.01,.17,.99);
 }
 
-.spinner--wave-light .spinner--wave-el {
+.spinner__wave--light .spinner__wave__el {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.spinner--wave-dark .spinner--wave-el {
+.spinner__wave--dark .spinner__wave__el {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.spinner--wave-el-1 {
+.spinner__wave__el--1 {
   animation-delay: 0;
 }
 
-.spinner--wave-el-2 {
+.spinner__wave__el--2 {
   animation-delay: calc(-1 * var(--delay));
 }
 
-.spinner--wave-el-3 {
+.spinner__wave__el--3 {
   animation-delay: calc(-2 * var(--delay));
 }
 
-.spinner--wave-el-4 {
+.spinner__wave__el--4 {
   animation-delay: calc(-3 * var(--delay));
 }
 
-.spinner--wave-el-5 {
+.spinner__wave__el--5 {
   animation-delay: calc(-4 * var(--delay));
 }
 
