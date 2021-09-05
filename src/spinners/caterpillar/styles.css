@@ -11,8 +11,8 @@
   --large-height: 48px;
   --large-size: 16px;
 
-  --duration: 1.5s;
-  --delay: 0.075s;
+  --duration: 1.2s;
+  --delay: 0.08s;
 }
 
 .spinner__caterpillar {
@@ -20,7 +20,7 @@
   height: var(--medium-height);
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
   left: 0px;
   top: 0px;
@@ -90,8 +90,21 @@
 }
 
 @keyframes wave-move {
-  0%   {top: 0%;}
-  50%  {top: 75%;}
-  70%  {top: 75%;}
-  100% {top: 0%;}
+  0%   {bottom: 0%;}
+  2%  {bottom: 5%;}
+  4%  {bottom: 10%;}
+  6%  {bottom: 15%;}
+  8%  {bottom: 20%;}
+  10%  {bottom: 25%;}
+  12%  {bottom: 30%;}
+  14%  {bottom: 35%;}
+  16%  {bottom: 40%;}
+  20%  {bottom: 35%;}
+  24%  {bottom: 30%;}
+  28%  {bottom: 25%;}
+  32%  {bottom: 20%;}
+  36%  {bottom: 15%;}
+  40%  {bottom: 10%;}
+  46%  {bottom: 5%;}
+  50%  {bottom: 0%;}
 }
