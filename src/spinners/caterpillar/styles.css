@@ -1,0 +1,98 @@
+:root {
+  --small-width: 32px;
+  --small-height: 16px;
+  --small-size: 4px;
+
+  --medium-width:  64px;
+  --medium-height: 32px;
+  --medium-size: 8px;
+
+  --large-width: 96px;
+  --large-height: 48px;
+  --large-size: 12px;
+
+  --duration: 1.5s;
+  --elements: 5;
+  --delay: 0.075s;
+}
+
+.spinner--caterpillar-container {
+  display: block;
+}
+
+.spinner--caterpillar {
+  width: var(--medium-width);
+  height: var(--medium-height);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  left: 0px;
+  top: 0px;
+  position: relative;
+}
+
+.spinner--caterpillar-sm {
+  width: var(--small-width);
+  height: var(--small-height);
+}
+
+.spinner--caterpillar-sm .spinner--caterpillar-el {
+  width: var(--small-size);
+  height: var(--small-size);
+}
+
+.spinner--caterpillar-md {
+  width: var(--medium-width);
+  height: var(--medium-height);
+}
+
+.spinner--caterpillar-md .spinner--caterpillar-el {
+  width: var(--medium-size);
+  height: var(--medium-size);
+}
+
+.spinner--caterpillar-lg {
+  width: var(--large-width);
+  height: var(--large-height);
+}
+
+.spinner--caterpillar-lg .spinner--caterpillar-el {
+  width: var(--large-size);
+  height: var(--large-size);
+}
+
+.spinner--caterpillar-el {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  animation: wave-move var(--duration) infinite;
+  animation-timing-function: cubic-bezier(.88,.01,.17,.99);
+  -webkit-animation-timing-function: cubic-bezier(.88,.01,.17,.99);
+  position: relative;
+}
+
+.spinner--caterpillar-1 {
+}
+
+.spinner--caterpillar-2 {
+  animation-delay: calc(-1 * var(--delay));
+}
+
+.spinner--caterpillar-3 {
+  animation-delay: calc(-2 * var(--delay));
+}
+
+.spinner--caterpillar-4 {
+  animation-delay: calc(-3 * var(--delay));
+}
+
+.spinner--caterpillar-5 {
+  animation-delay: calc(-4 * var(--delay));
+}
+
+@keyframes wave-move {
+  0%   {top: 0%;}
+  50%  {top: 75%;}
+  70%  {top: 75%;}
+  100% {top: 0%;}
+}
