@@ -1,18 +1,18 @@
 :root {
-  --small-width: 32px;
-  --small-height: 32px;
-  --small-gap: 3px;
+  --small-width: 16px;
+  --small-height: 16px;
+  --small-size: 2px;
 
-  --medium-width:  64px;
-  --medium-height: 64px;
-  --medium-gap: 6px;
+  --medium-width:  48px;
+  --medium-height: 48px;
+  --medium-size: 6px;
 
   --large-width: 96px;
   --large-height: 96px;
-  --large-gap: 9px;
+  --large-size: 12px;
 
-  --duration: 1s;
-  --delay: 0.05s;
+  --duration: 1.2s;
+  --delay: 0.08s;
 }
 
 .spinner__wave {
@@ -29,24 +29,33 @@
 .spinner__wave--sm {
   width: var(--small-width);
   height: var(--small-height);
-  gap: var(--small-gap);
 }
+
+.spinner__wave--sm .spinner__wave__el {
+  width: var(--small-size);
+}
+
 
 .spinner__wave--md {
   width: var(--medium-width);
   height: var(--medium-height);
-  gap: var(--medium-gap);
+}
+
+.spinner__wave--md .spinner__wave__el {
+  width: var(--medium-size);
 }
 
 .spinner__wave--lg {
   width: var(--large-width);
   height: var(--large-height);
-  gap: var(--large-gap);
+}
+
+.spinner__wave--lg .spinner__wave__el {
+  width: var(--large-size);
 }
 
 .spinner__wave__el {
   background: rgba(0, 0, 0, 0.4);
-  flex: 1 1;
   animation: wave-move var(--duration) infinite;
   animation-timing-function: cubic-bezier(.88,.01,.17,.99);
   -webkit-animation-timing-function: cubic-bezier(.88,.01,.17,.99);
@@ -74,10 +83,6 @@
 
 .spinner__wave__el--4 {
   animation-delay: calc(-3 * var(--delay));
-}
-
-.spinner__wave__el--5 {
-  animation-delay: calc(-4 * var(--delay));
 }
 
 @keyframes wave-move {

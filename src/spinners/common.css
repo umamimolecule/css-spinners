@@ -10,6 +10,8 @@ body {
   flex-direction: row;
   align-items: center;
   overflow: hidden;
+  justify-content: space-between;
+  width: 800px;
 }
 
 .spinner__example__container--light {

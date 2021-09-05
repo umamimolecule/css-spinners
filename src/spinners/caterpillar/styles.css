@@ -1,10 +1,10 @@
 :root {
-  --small-width: 32px;
-  --small-height: 16px;
-  --small-size: 4px;
+  --small-width: 16px;
+  --small-height: 8px;
+  --small-size: 2px;
 
-  --medium-width:  64px;
-  --medium-height: 32px;
+  --medium-width:  48px;
+  --medium-height: 24px;
   --medium-size: 8px;
 
   --large-width: 96px;
@@ -87,10 +87,6 @@
 
 .spinner__caterpillar__el--4 {
   animation-delay: calc(-3 * var(--delay));
-}
-
-.spinner__caterpillar__el--5 {
-  animation-delay: calc(-4 * var(--delay));
 }
 
 @keyframes wave-move {

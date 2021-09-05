@@ -1,11 +1,11 @@
 :root {
-  --small-width: 32px;
-  --small-height: 32px;
-  --small-size: 4px;
+  --small-width: 24px;
+  --small-height: 24px;
+  --small-size: 3px;
 
-  --medium-width:  64px;
-  --medium-height: 64px;
-  --medium-size: 8px;
+  --medium-width: 48px;
+  --medium-height: 48px;
+  --medium-size: 6px;
 
   --large-width: 96px;
   --large-height: 96px;

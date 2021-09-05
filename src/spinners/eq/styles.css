@@ -1,26 +1,24 @@
 :root {
-  --small-width: 32px;
-  --small-height: 32px;
-  --small-gap: 3px;
+  --small-width: 16px;
+  --small-height: 16px;
+  --small-size: 3px;
 
-  --medium-width:  64px;
-  --medium-height: 64px;
-  --medium-gap: 6px;
+  --medium-width:  48px;
+  --medium-height: 48px;
+  --medium-size: 9px;
 
   --large-width: 96px;
   --large-height: 96px;
-  --large-gap: 9px;
+  --large-size: 18px;
 
   --duration-1: 1s;
   --duration-2: 0.9s;
   --duration-3: 0.85s;
   --duration-4: 0.8s;
-  --duration-5: 0.75s;
   --delay-1: 0.05s;
   --delay-2: 0.04s;
   --delay-3: 0.03s;
   --delay-4: 0.02s;
-  --delay-5: 0.01s;
 }
 
 .spinner__eq {
@@ -37,26 +35,34 @@
 .spinner__eq--sm {
   width: var(--small-width);
   height: var(--small-height);
-  gap: var(--small-gap);
 }
 
 .spinner__eq--md {
   width: var(--medium-width);
   height: var(--medium-height);
-  gap: var(--medium-gap);
 }
 
 .spinner__eq--lg {
   width: var(--large-width);
   height: var(--large-height);
-  gap: var(--large-gap);
 }
 
 .spinner__eq__el {
   background: rgba(0, 0, 0, 0.4);
-  flex: 1 1;
   animation-timing-function: cubic-bezier(.88,.01,.17,.99);
   -webkit-animation-timing-function: cubic-bezier(.88,.01,.17,.99);
+}
+
+.spinner__eq--sm .spinner__eq__el {
+  width: var(--small-size);
+}
+
+.spinner__eq--md .spinner__eq__el {
+  width: var(--medium-size);
+}
+
+.spinner__eq--lg .spinner__eq__el {
+  width: var(--large-size);
 }
 
 .spinner__eq--light .spinner__eq__el {
@@ -85,11 +91,6 @@
 .spinner__eq__el--4 {
   animation-delay: calc(-3 * var(--delay-4));
   animation: eq-move-4 var(--duration-4) infinite;
-}
-
-.spinner__eq__el--5 {
-  animation-delay: calc(-4 * var(--delay-5));
-  animation: eq-move-5 var(--duration-5) infinite;
 }
 
 @keyframes eq-move-1 {
@@ -123,15 +124,6 @@
   0%   {height: 10%}
   20%  {height: 60%;}
   40%  {height: 50%;}
-  60%  {height: 75%;}
-  80%  {height: 10%;}
-  100% {height: 10%;}
-}
-
-@keyframes eq-move-5 {
-  0%   {height: 10%}
-  20%  {height: 50%;}
-  40%  {height: 60%;}
   60%  {height: 75%;}
   80%  {height: 10%;}
   100% {height: 10%;}
