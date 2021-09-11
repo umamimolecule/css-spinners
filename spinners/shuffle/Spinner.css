@@ -13,6 +13,9 @@
 
   --duration: 1.5s;
   --delay: 0.05s;
+
+  --color-dark: rgba(255, 255, 255, 0.6);
+  --color-light: rgba(0, 0, 0, 0.4);
 }
 
 .spinner__shuffle {
@@ -21,57 +24,21 @@
   position: relative;
 }
 
-.spinner__shuffle--sm {
-  width: var(--small-width);
-  height: var(--small-height);
-}
-
-.spinner__shuffle--sm .spinner__shuffle__el {
-  width: var(--small-size);
-  height: var(--small-size);
-  top: calc((var(--small-height) - var(--small-size)) / 2);
-}
-
-.spinner__shuffle--md {
-  width: var(--medium-width);
-  height: var(--medium-height);
-}
-
-.spinner__shuffle--md .spinner__shuffle__el {
-  width: var(--medium-size);
-  height: var(--medium-size);
-  top: calc((var(--medium-height) - var(--medium-size)) / 2);
-}
-
-.spinner__shuffle--lg {
-  width: var(--large-width);
-  height: var(--large-height);
-}
-
-.spinner__shuffle--lg .spinner__shuffle__el {
-  width: var(--large-size);
-  height: var(--large-size);
-  top: calc((var(--large-height) - var(--large-size)) / 2);
-}
-
 .spinner__shuffle__el {
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.4);
-  animation: wave-move var(--duration) infinite;
+  background: var(--color-light);
+  animation: shuffle-move var(--duration) infinite;
   animation-timing-function: cubic-bezier(.88,.01,.17,.99);
   -webkit-animation-timing-function: cubic-bezier(.88,.01,.17,.99);
   position: absolute;
 }
 
 .spinner__shuffle--light .spinner__shuffle__el {
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--color-light);
 }
 
 .spinner__shuffle--dark .spinner__shuffle__el {
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.spinner__shuffle__el--1 {
+  background: var(--color-dark);
 }
 
 .spinner__shuffle__el--2 {
@@ -90,8 +57,44 @@
   animation-delay: calc(-4 * var(--delay));
 }
 
-@keyframes wave-move {
+@keyframes shuffle-move {
   0%   {right: 0%;}
   50%  {right: 85%;}
   100% {right: 0%;}
+}
+
+/* Small */
+.spinner__shuffle--sm {
+  width: var(--small-width);
+  height: var(--small-height);
+}
+
+.spinner__shuffle--sm .spinner__shuffle__el {
+  width: var(--small-size);
+  height: var(--small-size);
+  top: calc((var(--small-height) - var(--small-size)) / 2);
+}
+
+/* Medium */
+.spinner__shuffle--md {
+  width: var(--medium-width);
+  height: var(--medium-height);
+}
+
+.spinner__shuffle--md .spinner__shuffle__el {
+  width: var(--medium-size);
+  height: var(--medium-size);
+  top: calc((var(--medium-height) - var(--medium-size)) / 2);
+}
+
+/* Large */
+.spinner__shuffle--lg {
+  width: var(--large-width);
+  height: var(--large-height);
+}
+
+.spinner__shuffle--lg .spinner__shuffle__el {
+  width: var(--large-size);
+  height: var(--large-size);
+  top: calc((var(--large-height) - var(--large-size)) / 2);
 }

@@ -13,6 +13,9 @@
 
   --duration: 1.2s;
   --delay: 0.08s;
+
+  --color-dark: rgba(255, 255, 255, 0.6);
+  --color-light: rgba(0, 0, 0, 0.4);
 }
 
 .spinner__caterpillar {
@@ -27,51 +30,21 @@
   position: relative;
 }
 
-.spinner__caterpillar--sm {
-  width: var(--small-width);
-  height: var(--small-height);
-}
-
-.spinner__caterpillar--sm .spinner__caterpillar__el {
-  width: var(--small-size);
-  height: var(--small-size);
-}
-
-.spinner__caterpillar--md {
-  width: var(--medium-width);
-  height: var(--medium-height);
-}
-
-.spinner__caterpillar--md .spinner__caterpillar__el {
-  width: var(--medium-size);
-  height: var(--medium-size);
-}
-
-.spinner__caterpillar--lg {
-  width: var(--large-width);
-  height: var(--large-height);
-}
-
-.spinner__caterpillar--lg .spinner__caterpillar__el {
-  width: var(--large-size);
-  height: var(--large-size);
-}
-
 .spinner__caterpillar__el {
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.4);
-  animation: wave-move var(--duration) infinite;
+  background: var(--color-light);
+  animation: caterpillar-move var(--duration) infinite;
   animation-timing-function: cubic-bezier(.88,.01,.17,.99);
   -webkit-animation-timing-function: cubic-bezier(.88,.01,.17,.99);
   position: relative;
 }
 
 .spinner__caterpillar--light .spinner__caterpillar__el {
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--color-light);
 }
 
 .spinner__caterpillar--dark .spinner__caterpillar__el {
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--color-dark);
 }
 
 .spinner__caterpillar__el--2 {
@@ -86,7 +59,7 @@
   animation-delay: calc(-3 * var(--delay));
 }
 
-@keyframes wave-move {
+@keyframes caterpillar-move {
   0%   {bottom: 0%;}
   2%  {bottom: 5%;}
   4%  {bottom: 10%;}
@@ -104,4 +77,37 @@
   40%  {bottom: 10%;}
   46%  {bottom: 5%;}
   50%  {bottom: 0%;}
+}
+
+/* Small */
+.spinner__caterpillar--sm {
+  width: var(--small-width);
+  height: var(--small-height);
+}
+
+.spinner__caterpillar--sm .spinner__caterpillar__el {
+  width: var(--small-size);
+  height: var(--small-size);
+}
+
+/* Medium */
+.spinner__caterpillar--md {
+  width: var(--medium-width);
+  height: var(--medium-height);
+}
+
+.spinner__caterpillar--md .spinner__caterpillar__el {
+  width: var(--medium-size);
+  height: var(--medium-size);
+}
+
+/* Large */
+.spinner__caterpillar--lg {
+  width: var(--large-width);
+  height: var(--large-height);
+}
+
+.spinner__caterpillar--lg .spinner__caterpillar__el {
+  width: var(--large-size);
+  height: var(--large-size);
 }
