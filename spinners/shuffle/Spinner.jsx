@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './styles.css';
+import './Spinner.css';
 
 const Spinner = (props) => {
   const { size, theme } = props;
