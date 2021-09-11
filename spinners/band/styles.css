@@ -19,6 +19,8 @@
 
 .spinner__band {
   display: grid;
+  width: max-content;
+  height: max-content;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   animation: rotate var(--duration) infinite;
