@@ -70,11 +70,8 @@
   background: rgba(0, 0, 0, 0.4);
 }
 
-.spinner__caterpillar-dark .spinner__caterpillar__el {
+.spinner__caterpillar--dark .spinner__caterpillar__el {
   background: rgba(255, 255, 255, 0.6);
-}
-
-.spinner__caterpillar__el--1 {
 }
 
 .spinner__caterpillar__el--2 {

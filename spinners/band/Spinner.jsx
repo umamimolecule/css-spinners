@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-const BandSpinner = (props) => {
+const Spinner = (props) => {
   const { size, theme } = props;
 
   return (
@@ -15,14 +15,14 @@ const BandSpinner = (props) => {
   );
 }
 
-BandSpinner.propTypes = {
+Spinner.propTypes = {
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   theme: PropTypes.oneOf(['dark', 'light']),
 }
 
-BandSpinner.defaultProps = {
+Spinner.defaultProps = {
   size: 'md',
   theme: 'light',
 };
 
-export default BandSpinner;
+export default Spinner;
